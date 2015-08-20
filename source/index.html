@@ -1,0 +1,42 @@
+
+<!DOCTYPE html>
+<html ng-app="MyApp">
+
+<head>
+    <title>Web Site</title>
+    <base href="/angular_grunt_structure/source/" />
+    <!-- build:css css/style.min.css -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/css-controller/home.css">
+    <link rel="stylesheet" href="assets/css/css-controller/profile.css">
+    <link rel="stylesheet" href="assets/css/css-directives/swipe.css">
+    <!-- endbuild -->
+</head>
+
+<body ng-controller="MainController as main">
+    <!-- Nav Links -->
+    <div>
+        <a href="./home">Home</a>
+        <a href="./profile">Profile</a>
+    </div>
+    <!-- Templates are loaded to this Block -->
+    <div ng-view></div>
+    <!-- build:js script.min.js -->
+    <!-- Include JS  -->
+    <script src="config/include.js"></script>
+    <!-- Library Includes -->
+    <script src="assets/libs/angular/angular.min.js"></script>
+    <script src="assets/libs/angular/angular-route.min.js"></script>
+    <script src="app/app.module.js"></script>
+    <!-- Include all controllers here -->
+    <script src="app/app.maincontroller.js"></script>
+    <script src="app/components/home/homecontroller.js"></script>
+    <script src="app/components/profile/profilecontroller.js"></script>
+    <!-- Initiate App router -->
+    <script src="app/app.routes.js"></script>
+    <!-- App settings file -->
+    <script src="config/settings.js"></script>
+    <!-- endbuild -->
+</body>
+
+</html>

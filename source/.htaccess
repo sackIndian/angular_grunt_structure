@@ -1,0 +1,6 @@
+RewriteEngine On
+
+RewriteBase /angular_grunt_structure/source/
+
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule ^ index.html [QSA,L]
