@@ -1,6 +1,6 @@
 # angular_grunt_structure
 
-An angular kick start which provides JOHNPAP styles of coding structure.
+An angular kick start which provides JOHNPAPA styles of coding structure.
 
 Along with that it has grunt CSS, JS, HTML minifier which can be used for minification of codes.
 
